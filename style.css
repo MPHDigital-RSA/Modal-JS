@@ -1,0 +1,89 @@
+:root {
+    --green: #2F920B;
+    --grey: #8B8B8B;
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+h3,
+p {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-inline: 40px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    background-color: var(--green);
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: var(--white);
+    font-size: 15px;
+}
+
+button img {
+    width: 24px;
+    height: 24px;
+}
+
+.modal {
+    max-width: 600px;
+    padding: 50px;
+    background-color: red; 
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    position: relative;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+.socials img {
+    transition: transform 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.socials img:hover {
+    transform: translateY(-5px);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    color: var(--green);
+}
+
+p {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: var(--grey);
+}
